@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama Modelo de Desarrollo de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+        }
+
+        /* Símbolos */
+
+        /* Rectángulo: Fases */
+        .rectangle {
+            width: 250px;
+            height: 70px;
+            background-color: #e1f5fe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+        /* Flechas */
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid #333;
+            margin: 10px 0;
+        }
+
+        /* Contenedor general */
+        .flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flow">
+        <!-- Requisitos -->
+        <div class="rectangle">Requisitos</div>
+        <div class="arrow"></div>
+
+        <!-- Diseño -->
+        <div class="rectangle">Diseño</div>
+        <div class="arrow"></div>
+
+        <!-- Implementación -->
+        <div class="rectangle">Implementación</div>
+        <div class="arrow"></div>
+
+        <!-- Pruebas -->
+        <div class="rectangle">Pruebas</div>
+        <div class="arrow"></div>
+
+        <!-- Despliegue -->
+        <div class="rectangle">Despliegue</div>
+        <div class="arrow"></div>
+
+        <!-- Mantenimiento -->
+        <div class="rectangle">Mantenimiento</div>
+    </div>
+</body>
+</html>
